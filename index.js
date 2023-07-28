@@ -10,7 +10,7 @@ const questions = [
     {
         type:'input',
         name:'text',
-        message:'Enter up to 3 characters that you would like to use:';
+        message:'Enter up to 3 characters that you would like to use:',
     },
     {
         type:'input',
