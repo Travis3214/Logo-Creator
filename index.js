@@ -29,3 +29,19 @@ const questions = [
         message:'What color do you want the shape to be:',
     },
 ];
+
+// This is a function to write the data to the file //
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName,data,(err) =>
+    err ? console.error(err) : console.log("Success!")
+    )
+};
+
+function init() {
+    inquirer.prompt(questions)
+    .then(function(answers){
+        writeToFile('logo.svg', {square, circle, triangle}(answers));
+    })
+};
+
+init();
