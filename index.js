@@ -14,7 +14,7 @@ const questions = [
     },
     {
         type:'input',
-        name:'text-color',
+        name:'textColor',
         message:'What color would you like the text to be:',
     },
     {
@@ -25,7 +25,7 @@ const questions = [
     },
     {
         type:'input',
-        name:'shape-color',
+        name:'shapeColor',
         message:'What color do you want the shape to be:',
     },
 ];
