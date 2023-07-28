@@ -44,4 +44,5 @@ function init() {
     })
 };
 
+// Calling on the function //
 init();
