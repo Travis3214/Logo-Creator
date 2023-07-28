@@ -5,8 +5,9 @@ const inquirer = require('inquirer');
 // Const for the shapes that are going to be used from shapes.js //
 const {square, circle, triangle} = require('./lib/shapes')
 
-// Creating a questions array for the inquirer prompt to use //
-const questions = [
+// Creating inquirer prompt for the user to input what they want their logo to be //
+function inqPrompt() {
+inquirer.prompt([
     {
         type:'input',
         name:'text',
@@ -28,21 +29,13 @@ const questions = [
         name:'shapeColor',
         message:'What color do you want the shape to be:',
     },
-];
-
-// This is a function to write the data to the file //
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName,data,(err) =>
-    err ? console.error(err) : console.log("Success!")
-    )
-};
-
-function init() {
-    inquirer.prompt(questions)
-    .then(function(answers){
-        writeToFile('logo.svg', {square, circle, triangle}(answers));
+])
+.then((answers) => {
+    if (answers.text.length > 3) {
+        console.log("Text cannot have more than 3 characters");
+        inqPrompt();
+      } else {
+        writeToFile("logo.svg", answers);
+      }
     })
 };
-
-// Calling on the function //
-init();
