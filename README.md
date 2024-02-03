@@ -24,7 +24,7 @@ https://mit-license.org/
 * Travis Rivera
 
 ## Test
-Im going to use 'Jest' to test and make sure the logos are generating properly.
+Im going to use 'Jest' to test and make sure the logos are generating properly. I created 1 test suite with 3 test cases inside to test each shape. With each shape I also tested different colors in the form of text and color codes.
 
 ## Questions?
 
