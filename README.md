@@ -1,7 +1,7 @@
 # Logo-Creator
 
 ## Description
-This is a project that creates logos in the form of a SVG file. I will then use the testing framework 'Jest' to write test cases and make sure that the users inputs are buing applied correctly. The user should be able to pick 
+This is a project that creates logos in the form of a SVG file. I will then use the testing framework 'Jest' to write test cases and make sure that the users inputs are buing applied correctly. The user should be run the inquirer prompt and answer a series of questions to generate the logo they want.
 
 ## Table of contents
 * [Installation](#installation)
@@ -12,7 +12,7 @@ This is a project that creates logos in the form of a SVG file. I will then use 
 * [Questions?](#questions)
 
 ## Installation
-Use the command "npm i" to install neccessary packages to run this node application locally.
+Use the command "npm i" to install neccessary packages to run this node application locally. Then run "node index.js" to start the inquirer prompt. 
 
 ## Display
 ![Example 1](/examples/example1.svg)
